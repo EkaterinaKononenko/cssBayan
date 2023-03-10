@@ -139,3 +139,41 @@ transition: background .3s ease-out;
     display: none;
   
 }
+
+/*//////////////////PART///////////////*/
+
+.part{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.part__label{
+padding: 10px 15px;
+display: block;
+cursor: pointer;
+
+transition: background .3s ease-out;
+}
+
+.part__label:hover{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.part__input{
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.part__input:checked + .part__wrapper{
+    display: block;
+}
+
+.part__wrapper{
+    padding: 10px 15px;
+    display: none;
+  
+}
