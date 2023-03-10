@@ -177,3 +177,41 @@ transition: background .3s ease-out;
     display: none;
   
 }
+
+/*//////////////////DONE///////////////*/
+
+.done{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.done__label{
+padding: 10px 15px;
+display: block;
+cursor: pointer;
+
+transition: background .3s ease-out;
+}
+
+.done__label:hover{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.done__input{
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.done__input:checked + .done__wrapper{
+    display: block;
+}
+
+.done__wrapper{
+    padding: 10px 15px;
+    display: none;
+  
+}
