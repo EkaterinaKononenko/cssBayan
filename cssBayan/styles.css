@@ -1,0 +1,60 @@
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+
+    background-color: aquamarine;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+/*///////////////////START////////////////////////////////*/
+.start{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.start__wrap{
+    /*border: 1px solid black;*/
+}
+
+.start__label{
+padding: 10px 15px;
+display: block;
+cursor: pointer;
+
+transition: background .3s ease-out;
+}
+
+.start__label:hover{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.start__input{
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.start__input:checked + .start__wrapper{
+    display: block;
+}
+
+.start__wrapper{
+    padding: 10px 15px;
+    display: none;
+  
+}
