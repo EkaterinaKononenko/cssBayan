@@ -18,6 +18,13 @@ img {
     margin: 0 auto;
 }
 
+/*//////////////////HEADER///////////////////////////////*/
+
+.title{
+    color: blue;
+    text-align: center;
+}
+
 /*///////////////////START////////////////////////////////*/
 .start{
     max-width: 100%;
@@ -25,9 +32,6 @@ img {
     text-align: center;
 }
 
-.start__wrap{
-    /*border: 1px solid black;*/
-}
 
 .start__label{
 padding: 10px 15px;
@@ -54,6 +58,83 @@ transition: background .3s ease-out;
 }
 
 .start__wrapper{
+    padding: 10px 15px;
+    display: none;
+  
+}
+
+/*///////////////////DEADLINE////////////////////////////*/
+
+.deadline{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.deadline__label{
+padding: 10px 15px;
+display: block;
+cursor: pointer;
+
+transition: background .3s ease-out;
+}
+
+.deadline__label:hover{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.deadline__input{
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.deadline__input:checked + .deadline__wrapper{
+    display: block;
+}
+
+.deadline__wrapper{
+    padding: 10px 15px;
+    display: none;
+  
+}
+
+/*//////////////////PLAN///////////////*/
+
+.plan{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plan__label{
+padding: 10px 15px;
+display: block;
+cursor: pointer;
+
+transition: background .3s ease-out;
+}
+
+.plan__label:hover{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.plan__input{
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.plan__input:checked + .plan__wrapper{
+    display: block;
+}
+
+.plan__wrapper{
     padding: 10px 15px;
     display: none;
   
