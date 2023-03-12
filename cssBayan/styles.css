@@ -95,8 +95,8 @@ margin: 0 auto;
     font-size: 4em;
   }}
 
-/*///////////////////START////////////////////////////////*/
-.start{
+/*///////////////////BODY/////////////////////////*/
+.section{
     max-width: 40rem;
     margin: 0 auto;
     text-align: center;
@@ -106,7 +106,7 @@ margin: 0 auto;
      max-width: 50rem;
   }}
 
-.start__label{
+.label{
 padding: 10px 15px;
 display: flex;
 flex-direction: row;
@@ -114,26 +114,25 @@ justify-content: space-between;
 cursor: pointer;
 text-align: start;
 
-transition: background .3s ease-out;
+ transition: color 0.3s ease-out; 
 }
 
-.start__input{
+.input{
     width: 0;
     height: 0;
     appearance: none;
 }
 
-.start__label:hover{
-    background-color: blue;
-    color: white;
+.label:hover{
+    color: blue;
     font-weight: bold;
 }
 
 
-.start__label:hover ~ .start__wrapper{
+.label:hover ~ .wrapper{
      display: block;
-      opacity: 0;
-      animation: ani 2s forwards;  
+     opacity: 0;
+     animation: ani 2s forwards;  
 }
 
 @keyframes ani {
@@ -141,19 +140,19 @@ transition: background .3s ease-out;
   100% {opacity: 1;}
 } 
 
-.start__input:checked ~ .start__wrapper{
+.input:checked ~ .wrapper{
     display: block;
 }
 
 
-.start__input:checked ~ .start__label{
+.input:checked ~ .label{
     background-color: blue;
     color: white;
     font-weight: bold;
 
 }
 
-.start__wrapper{
+.wrapper{
     padding: 10px 15px;
     display: none;
 }
@@ -168,278 +167,18 @@ transition: background .3s ease-out;
   display: none;
 }
 
-.start__input:checked ~ .start__label .plus{
+.input:checked ~ .label .plus{
   display: none;
 }
-.start__input:checked ~ .start__label .cross{
+.input:checked ~ .label .cross{
   display: inline-flex;
 }
 
-.start__input:hover ~ .start__label .plus{
+.input:hover ~ .label .plus{
   display: none;
 }
-.start__input:hover ~ .start__label .cross{
+.input:hover ~ .label .cross{
   display: inline-flex;
-}
-
-
-/*///////////////////DEADLINE////////////////////////////*/
-
-.deadline{
-    max-width: 40rem;
-    margin: 0 auto;
-    text-align: center;
-}
-@media screen and (min-width: 1920px) {
-  .deadline {
-     max-width: 50rem;
-  }}
-
-.deadline__label{
-padding: 10px 15px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-cursor: pointer;
-text-align: start;
-
-transition: background .3s ease-out;
-}
-
-.deadline__label:hover{
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-}
-
-.deadline__label:hover ~ .deadline__wrapper{
- display: block;
- opacity: 0;
- animation: ani 2s forwards;  
-}
-
-@keyframes ani {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.deadline__input{
-    width: 0;
-    height: 0;
-    appearance: none;
-}
-
-.deadline__input:checked ~ .deadline__wrapper{
-    display: block;
-}
-
-.deadline__input:checked ~ .deadline__label{
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-
-}
-
-.deadline__wrapper{
-    padding: 10px 15px;
-    display: none;
-  
-}
-
-/*//////////////////////PLAN//////////////////////*/
-
-.plan{
-    max-width: 40rem;
-    margin: 0 auto;
-    text-align: center;
-}
-@media screen and (min-width: 1920px) {
-  .plan {
-     max-width: 50rem;
-  }}
-
-.plan__label{
-padding: 10px 15px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-cursor: pointer;
-text-align: start;
-
-transition: background .3s ease-out;
-}
-
-.plan__label:hover{
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-}
-
-.plan__input{
-    width: 0;
-    height: 0;
-    appearance: none;
-}
-
-.plan__label:hover ~ .plan__wrapper{
-  display: block;
- opacity: 0;
- animation: ani 2s forwards;  
-}
-
-@keyframes ani {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.plan__input:checked ~ .plan__wrapper{
-    display: block;
-}
-
-.plan__input:checked ~ .plan__label{
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-
-}
-
-.plan__wrapper{
-    padding: 10px 15px;
-    display: none;
-  
-}
-
-/*/////////////////////////PART///////////////////////*/
-
-.part{
-    max-width: 40rem;
-    margin: 0 auto;
-    text-align: center;
-}
-@media screen and (min-width: 1920px) {
-  .part {
-     max-width: 50rem;
-  }}
-
-.part__label{
-padding: 10px 15px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-cursor: pointer;
-text-align: start;
-
-transition: background .3s ease-out;
-}
-
-.part__label:hover{
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-}
-
-.part__label:hover ~ .part__wrapper{
- display: block;
- opacity: 0;
- animation: ani 2s forwards;  
-}
-
-@keyframes ani {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.part__input{
-    width: 0;
-    height: 0;
-    appearance: none;
-}
-
-.part__input:checked ~ .part__wrapper{
-   display: block;
- opacity: 0;
- animation: ani 2s forwards;  
-}
-
-@keyframes ani {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.part__input:checked ~ .part__label{
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-
-}
-
-.part__wrapper{
-    padding: 10px 15px;
-    display: none;
-  
-}
-
-/*///////////////////////////DONE//////////////////////////*/
-
-.done{
-    max-width: 40rem;
-    margin: 0 auto;
-    text-align: center;
-}
-@media screen and (min-width: 1920px) {
-  .done {
-     max-width: 50rem;
-  }}
-
-.done__label{
-padding: 10px 15px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-cursor: pointer;
-text-align: start;
-
-transition: background .3s ease-out;
-}
-
-.done__label:hover{
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-}
-
-.done__input{
-    width: 0;
-    height: 0;
-    appearance: none;
-}
-
-.done__label:hover ~ .done__wrapper{
- display: block;
- opacity: 0;
- animation: ani 2s forwards;  
-}
-
-@keyframes ani {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.done__input:checked ~ .done__wrapper{
-    display: block;
-}
-
-.done__input:checked ~ .done__label{
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-
-}
-
-.done__wrapper{
-    padding: 10px 15px;
-    display: none;
-  
 }
 
 /*//////////////////////////FOOTER//////////////////////////*/
