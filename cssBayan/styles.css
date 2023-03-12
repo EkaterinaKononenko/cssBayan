@@ -108,8 +108,11 @@ margin: 0 auto;
 
 .start__label{
 padding: 10px 15px;
-display: block;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 cursor: pointer;
+text-align: start;
 
 transition: background .3s ease-out;
 }
@@ -126,9 +129,17 @@ transition: background .3s ease-out;
     font-weight: bold;
 }
 
+
 .start__label:hover ~ .start__wrapper{
      display: block;
+      opacity: 0;
+      animation: ani 2s forwards;  
 }
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
 
 .start__input:checked ~ .start__wrapper{
     display: block;
@@ -145,8 +156,32 @@ transition: background .3s ease-out;
 .start__wrapper{
     padding: 10px 15px;
     display: none;
-  
 }
+
+.plus{
+ text-align: end;
+ display: inline-flex;
+}
+
+.cross{
+  text-align: end;
+  display: none;
+}
+
+.start__input:checked ~ .start__label .plus{
+  display: none;
+}
+.start__input:checked ~ .start__label .cross{
+  display: inline-flex;
+}
+
+.start__input:hover ~ .start__label .plus{
+  display: none;
+}
+.start__input:hover ~ .start__label .cross{
+  display: inline-flex;
+}
+
 
 /*///////////////////DEADLINE////////////////////////////*/
 
@@ -162,8 +197,11 @@ transition: background .3s ease-out;
 
 .deadline__label{
 padding: 10px 15px;
-display: block;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 cursor: pointer;
+text-align: start;
 
 transition: background .3s ease-out;
 }
@@ -176,6 +214,13 @@ transition: background .3s ease-out;
 
 .deadline__label:hover ~ .deadline__wrapper{
  display: block;
+ opacity: 0;
+ animation: ani 2s forwards;  
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .deadline__input{
@@ -215,8 +260,11 @@ transition: background .3s ease-out;
 
 .plan__label{
 padding: 10px 15px;
-display: block;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 cursor: pointer;
+text-align: start;
 
 transition: background .3s ease-out;
 }
@@ -234,7 +282,14 @@ transition: background .3s ease-out;
 }
 
 .plan__label:hover ~ .plan__wrapper{
-    display: block;
+  display: block;
+ opacity: 0;
+ animation: ani 2s forwards;  
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .plan__input:checked ~ .plan__wrapper{
@@ -268,8 +323,11 @@ transition: background .3s ease-out;
 
 .part__label{
 padding: 10px 15px;
-display: block;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 cursor: pointer;
+text-align: start;
 
 transition: background .3s ease-out;
 }
@@ -281,7 +339,14 @@ transition: background .3s ease-out;
 }
 
 .part__label:hover ~ .part__wrapper{
-    display: block;
+ display: block;
+ opacity: 0;
+ animation: ani 2s forwards;  
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .part__input{
@@ -291,7 +356,14 @@ transition: background .3s ease-out;
 }
 
 .part__input:checked ~ .part__wrapper{
-    display: block;
+   display: block;
+ opacity: 0;
+ animation: ani 2s forwards;  
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .part__input:checked ~ .part__label{
@@ -321,8 +393,11 @@ transition: background .3s ease-out;
 
 .done__label{
 padding: 10px 15px;
-display: block;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 cursor: pointer;
+text-align: start;
 
 transition: background .3s ease-out;
 }
@@ -340,7 +415,14 @@ transition: background .3s ease-out;
 }
 
 .done__label:hover ~ .done__wrapper{
-    display: block;
+ display: block;
+ opacity: 0;
+ animation: ani 2s forwards;  
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .done__input:checked ~ .done__wrapper{
